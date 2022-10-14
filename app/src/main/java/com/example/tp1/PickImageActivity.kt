@@ -3,9 +3,10 @@ package com.example.tp1
 import android.content.Intent
 import android.os.Bundle
 import android.provider.MediaStore
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.ImageView
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 
 
 class PickImageActivity : AppCompatActivity() {
