@@ -1,12 +1,11 @@
 package com.example.tp1
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var txtEmail : EditText
@@ -22,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
 
         btnLogin.setOnClickListener { view ->
-            var email = txtEmail.text.toString()
-            var pass = txtPass.text.toString()
+            val email = txtEmail.text.toString()
+            val pass = txtPass.text.toString()
             if(email=="test@insat.tn" && pass=="insat"){
                 Toast.makeText(this@MainActivity, "Bienvenue", Toast.LENGTH_LONG).show()
                 val intent = Intent(view.context,WelcomeActivity::class.java)
@@ -38,10 +37,6 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-
-        var email = txtEmail.text.toString()
-
-
     }
 
 
